@@ -1,18 +1,18 @@
 `timescale 1ns/10ps
 
 module LBP ( 
-	input clk,
-	input reset,
+	input  clk,
+	input  reset,
 	
 	output     [13:0] gray_addr,
 	output reg        gray_req,
-	input  		      gray_ready,
+	input  		  gray_ready,
 	input      [7:0]  gray_data,
 	
-	output reg 		  lbp_valid,
+	output reg        lbp_valid,
 	output reg [13:0] lbp_addr,
 	output reg [7:0]  lbp_data,
-	output reg 		  finish
+	output reg        finish
 );
 	localparam frame_width = 3;
 	
