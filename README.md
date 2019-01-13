@@ -1,2 +1,0 @@
-# LBP
-Local Binary Patterns
